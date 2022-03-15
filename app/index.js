@@ -17,8 +17,8 @@ function App () {
   render() {
     return (
       <Router>
-        <ThemeProvider value={this.state}>
-          <div className={this.state.theme}>
+        <ThemeProvider value={theme}>
+          <div className={theme}>
             <div className='container'>
               <Nav toggleTheme={toggleTheme} />
 
