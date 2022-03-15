@@ -13,9 +13,8 @@ const Results = React.lazy(() => import('./components/Results'))
 function App () {
   const [theme, setTheme] = React.useState('light')
   const toggleTheme = () => setTheme((theme) => theme === 'light' ? 'dark' : 'light')
-
-  render() {
-    return (
+  
+  return (
       <Router>
         <ThemeProvider value={theme}>
           <div className={theme}>
@@ -34,8 +33,7 @@ function App () {
           </div>
         </ThemeProvider>
       </Router>
-    )
-  }
+  )
 }
 
 ReactDOM.render(
