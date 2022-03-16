@@ -24,7 +24,7 @@ const styles = {
   }
 }
 
-export default function Tooltip ({ text, children }) {
+function Tooltip ({ text, children }) {
   const [hovering, attrs] = useHover()
 
   return (
@@ -33,6 +33,8 @@ export default function Tooltip ({ text, children }) {
       {children}
     </div>
   )
+
+export default Tooltip;
 }
 
 Tooltip.propTypes = {
